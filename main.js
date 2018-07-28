@@ -20,28 +20,18 @@ console.log(favFood);
 let agree = confirm("Is your favorite food " + favFood + "?")
 console.log(agree);
 
-//If condition is true, invoke alert function and use yourName and favFood variables. 
-let favFood2;
-let agree2;
-if (agree === true)
+//Invoke newFunc and return forgiving 
+
+let forgiving = confirm('Would you forgive easily?');
+if (forgiving === true) 
 {
-    (alert("Great, " + yourName + ". I'm glad you still like " + favFood));
-} 
-//Else, invoke alert then invoke newFunc passing it a string and favFood2 variables. Then, invoke confirm function and set value to agree2. If agree2 condition is met, then invoke one alert. Else, invoke another alert. 
-else 
+' forgive '; 
+} else 
 {
-    alert("Sounds like you may have changed your mind.");
-    newFunc('What are you thinking at the moment is your favorite food?', favFood2); 
-    agree2 = confirm("Is your favorite food " + favFood2 + "?"); 
-    if (agree2 === true)
-    {
-        (alert ("Great. Let's get some " + favFood2 + " after all that thinking."))
-    }
-    else 
-    {
-        (alert("I give up. Both "+  favFood + " and " + favFood2 + " sound like good choices to me."))
-    }
+' not forgive '; 
 }; 
+
+console.log(forgiving); 
 
 //Create function newFunc2 which uses HTML method and property 
 function newFunc2(l, m) 
@@ -67,9 +57,7 @@ function newFunc3(id1, para1)
 }; 
 
 // Invoke newFunc2 three times by passing it arguments 
-newFunc3('confirm', agree2);
-console.log(newFunc3);
-newFunc3('food2', favFood2); 
-console.log(newFunc3); 
 newFunc3('teacher', teacherName); 
+console.log(newFunc3); 
+newFunc3('forgive', forgiving); 
 console.log(newFunc3); 
