@@ -10,15 +10,28 @@ p, span {
     color: pink; 
 }
 
-.directions {
+#directions {
     font-size: 9px;
 }
-.food1 {
+span.food1 {
     color: lightcoral;
 }
-.food2 {
-    color: hotpink; 
+span.food2 {
+    color: orchid; 
 }
-.within {
+#within {
     color: black;
+}
+.role {
+    color: teal;
+}
+.role2 {
+    color: grey;
+}
+.role1 {
+    color: lightseagreen;
+}
+.image {
+    width: 300px;
+    height: 300px;
 }
