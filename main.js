@@ -1,3 +1,17 @@
+// declaring 
+let captchaArray = ['Who is the President?', 'What is our Nations capital?','How many states are there?']
+
+function captchaFunction() {
+    let correctAnswer = ['Trump', 'DC','50']
+for(let i=0; i < correctAnswer.length; i++) {
+    let result = prompt(captchaArray[i]);
+    if(correctAnswer[i] !== result) {
+        alert('Sorry robot')
+        return
+}
+alert('Hello Human'); 
+}
+
 // Function called newFunc that accepts parameters. Prompts x and returns y. 
 
 function newFunc(x) { 
@@ -61,3 +75,4 @@ newFunc3('teacher', teacherName);
 console.log(newFunc3); 
 newFunc3('forgive', forgiving); 
 console.log(newFunc3); 
+}
