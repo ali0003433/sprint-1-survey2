@@ -1,44 +1,65 @@
-let yourName = prompt("What's your name?");
-let favFood = prompt("What's your favorite food?");
-let agree = confirm("Is your favorite food " + favFood + "?")
-if (agree === true) {
-    (alert("Cool, " + yourName + ". I'm glad you still like " + favFood + " but feel free to change your mind next time."));
-} else {
-    alert("Sounds like you may have changed your mind.");
-    favFood2 = prompt(yourName + ", what are you thinking at moment is your favorite food?");
-    let agree2 = confirm("Is your favorite food " + favFood2 + "?")
-    if (agree2===true){
-        (alert ("Great. Let's get some " + favFood2 + " after all that thinking."))
-    } else {alert("I give up. Both "+  favFood + " and " + favFood2 + " sound like good choices to me.")}
-}
-let elName = document.getElementsByClassName('name');
-    for(i = 0; i < elName.length; i++)
-    {
-        elName[i].innerHTML = yourName;
-    }
-let elFavFood = document.getElementsByClassName('food1');
-for(i = 0; i < elFavFood.length; i++)
-{
-    elFavFood[i].innerHTML = favFood;
-}
-s
-let elConfirm = document.getElementById('confirm');
-elConfirm.innerHTML = agree;
-let elFood2 = document.getElementById('food2');
-elFood2.innerHTML = favFood2;
 
+// Function called newFunc that accepts parameters. Prompts x and returns y. 
 
-console.log(yourName);
+function newFunc(x) { 
+    return prompt(x);
+};
+
+//Invoke newFunc and return yourName
+let yourName = newFunc('What\'s your name?'); 
+console.log();
+
+//Invoke newFunc and return teacherName
+let teacherName = newFunc('What\'s your Javascript teacher\'s name?'); 
+console.log(teacherName);
+
+//Invoke newFunc and return favFood 
+let favFood = newFunc('What\'s your favorite food?'); 
 console.log(favFood);
+
+//Confirm favFood
+let agree = confirm("Is your favorite food " + favFood + "?")
 console.log(agree);
-console.log(agree2); 
-console.log(favFood2); 
-console.log(elName);
-console.log(elFood);
-console.log(elConfirm);
-console.log(elFood2); 
-console.log(elConfirm2);
-console.log(elFoods);
-console.log(names); 
 
+//Invoke newFunc and return forgiving 
 
+let forgiving = confirm('Would you forgive easily?');
+if (forgiving === true) 
+{
+' forgive '; 
+} else 
+{
+' not forgive '; 
+}; 
+
+console.log(forgiving); 
+
+//Create function newFunc2 which uses HTML method and property 
+function newFunc2(l, m) 
+{
+let elOne = document.getElementsByClassName(l)
+    for(i = 0; i < elOne.length; i++)
+    {
+        elOne[i].innerHTML = m; 
+    }; 
+};
+
+//Invoke newFunc2 and pass it arguments 
+newFunc2('name', yourName); 
+console.log(newFunc2);
+newFunc2('food1', favFood); 
+console.log(newFunc2); 
+
+// Function called newFunc2. Gets element by id, using argument id1, and replaces it with a string. Sets element to equal parameter para1. 
+function newFunc3(id1, para1)
+{
+    let elTwo= document.getElementById(id1)
+    elTwo.innerHTML = para1; 
+}; 
+
+// Invoke newFunc2 three times by passing it arguments 
+newFunc3('teacher', teacherName); 
+console.log(newFunc3); 
+newFunc3('forgive', forgiving); 
+console.log(newFunc3); 
+}
