@@ -1,5 +1,7 @@
+/* This is Kay's repo, forked. I put Helvetica in single quotes */
+
 p, h1, h5, h3, span {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, 'Helvetica', sans-serif;
 }
 
 p, span {
@@ -35,3 +37,4 @@ span.food2 {
     width: 300px;
     height: 300px;
 }
+

@@ -62,4 +62,4 @@ newFunc3('teacher', teacherName);
 console.log(newFunc3); 
 newFunc3('forgive', forgiving); 
 console.log(newFunc3); 
-}
+
